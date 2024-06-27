@@ -17,7 +17,7 @@ func TestGetApitKey(t *testing.T) {
 		{map[string][]string{}, ""},
 		{map[string][]string{"Authorizat": {"ApiKey 123456789"}}, ""},
 		{map[string][]string{"Authorization": {"A"}}, ""},
-		{map[string][]string{"Authorization": {"ApiKey    876543"}}, "   876543"},
+		{map[string][]string{"Authorization": {"ApiKey 876543"}}, "876543"},
 	}
 
 	for i, test := range tests {
