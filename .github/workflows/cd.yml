@@ -34,5 +34,5 @@ jobs:
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-427713/notely-ar-repo/notely:latest .
       
       - name: Replot to Cloud Run
-        run: run: gcloud run deploy notely --image us-central1-docker.pkg.dev/notely-427713/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project notely-427713 --max-instances=4
+        run: gcloud run deploy notely --image us-central1-docker.pkg.dev/notely-427713/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project notely-427713 --max-instances=4
     
